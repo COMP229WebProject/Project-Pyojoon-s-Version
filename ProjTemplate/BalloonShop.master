@@ -1,5 +1,6 @@
 <%@ Master Language="C#" AutoEventWireup="true" CodeFile="BalloonShop.master.cs"
-  Inherits="BalloonShop" %>
+    Inherits="BalloonShop" %>
+
 <%@ Register Src="UserControls/CartSummary.ascx" TagName="CartSummary" TagPrefix="uc6" %>
 <%@ Register Src="UserControls/UserInfo.ascx" TagName="UserInfo" TagPrefix="uc5" %>
 <%@ Register Src="UserControls/SearchBox.ascx" TagName="SearchBox" TagPrefix="uc4" %>
@@ -10,28 +11,42 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <link rel="Stylesheet" type="text/css" href="BalloonShop.css" />
-  <title>BalloonShop</title>
+    <title>BalloonShop</title>
 </head>
-<body>
-    <div style="width: 85%;	font-family: Verdana;color: white;margin-left: auto;margin-right: auto;padding: 8px; background-color: silver ;border: 5px solid #180000;">
-      <form id="Form1" runat="server">
-        <uc1:Header ID="Header2" runat="server" />
-        <uc4:SearchBox id="SearchBox2" runat="server"></uc4:SearchBox>
-        <uc5:UserInfo ID="UserInfo1" runat="server" />
-        <uc2:DepartmentsList ID="DepartmentsList2" runat="server" />
-        <uc3:CategoriesList ID="CategoriesList2" runat="server" />
-        <uc6:CartSummary ID="CartSummary2" runat="server" />
-        <table style="margin-right:auto; margin-left:auto">
-          <tr>
-            <td valign="top">
-                <center>
-                  <asp:ContentPlaceHolder ID="contentPlaceHolder" runat="server">
-                  </asp:ContentPlaceHolder>
-                </center>
-            </td>
-          </tr>
-        </table>
-      </form>
+<body style="width: 85%; font-family: Verdana; color: white; margin-left: auto; margin-right: auto; background-color: white">
+    <div>
+        <form id="Form1" runat="server">
+            <table style="margin-right: auto; margin-left: auto" frame="border">
+                <tr>
+                    <td valign="bottom">
+                        <uc4:SearchBox ID="SearchBox2" runat="server"></uc4:SearchBox>
+                        <uc5:UserInfo ID="UserInfo1" runat="server" />
+                    </td>
+                    <td>
+                        <uc1:Header ID="Header2" runat="server" />
+                    </td>
+                    <td valign="bottom">
+                        <uc6:CartSummary ID="CartSummary2" runat="server" />
+                    </td>
+                </tr>
+            </table>
+
+            <center>
+                <uc2:DepartmentsList ID="DepartmentsList2" runat="server" />
+            </center>
+            <br />
+            <table style="margin-right: auto; margin-left: auto" frame="border">
+                <tr>
+                    <td style="width: 300" valign="top" align="left">
+                        <uc3:CategoriesList ID="CategoriesList2" runat="server" />
+                    </td>
+                    <td valign="top">
+                        <asp:ContentPlaceHolder ID="contentPlaceHolder" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+            </table>
+        </form>
     </div>
 </body>
 </html>

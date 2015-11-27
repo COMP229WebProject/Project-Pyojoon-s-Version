@@ -6,7 +6,7 @@ body
 
 table
 {
-    oubackground-color:gray;
+    background-color:white;
 }
 
 /*Specific*/
@@ -34,7 +34,7 @@ table
 {      
   border: #01a647 2px solid;
   background-color: #30b86e;
-  font-family: Verdana, Arial;
+  font-family: black, Arial;
   font-weight: bold;
   font-size: 10pt;
   color: #f5f5dc;
@@ -75,3 +75,4 @@ a.DepartmentSelected
   padding-left: 5px;
   text-decoration: none;
 }
+

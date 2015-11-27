@@ -10,13 +10,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <link rel="Stylesheet" type="text/css" href="BalloonShop.css" />
+    <link rel="Stylesheet" type="text/css" href="App_Themes/BalloonShopDefault/BalloonShop.css" />
     <title>BalloonShop</title>
 </head>
-<body style="width: 85%; font-family: Verdana; color: white; margin-left: auto; margin-right: auto; background-color: white">
-    <div>
-        <form id="Form1" runat="server">
-            <table style="margin-right: auto; margin-left: auto" frame="border">
+<body style="font-family: Verdana; color: white; margin-left: auto; margin-right: auto; background-color: lightgrey">
+    <form id="Form1" runat="server">
+        <div style="background-color:lightgrey">
+            <table style="margin-right: auto; margin-left: auto">
                 <tr>
                     <td valign="bottom">
                         <uc4:SearchBox ID="SearchBox2" runat="server"></uc4:SearchBox>
@@ -30,7 +30,8 @@
                     </td>
                 </tr>
             </table>
-
+        </div>
+        <div style="background-color:lightgrey">
             <center>
                 <uc2:DepartmentsList ID="DepartmentsList2" runat="server" />
             </center>
@@ -46,7 +47,8 @@
                     </td>
                 </tr>
             </table>
-        </form>
-    </div>
+        </div>
+    </form>
+
 </body>
 </html>

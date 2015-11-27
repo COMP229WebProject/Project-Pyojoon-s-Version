@@ -7,8 +7,8 @@
   </tr>
   <tr>
     <td class="SearchBoxContent">
-      <asp:TextBox ID="searchTextBox" Runat="server" Width="128px" CssClass="SearchBox" BorderStyle="Dotted" MaxLength="100" Height="16px" />
-      <asp:Button ID="goButton" Runat="server" CssClass="SearchBox" Text="Go!" Width="36px" Height="21px" OnClick="goButton_Click" /><br />
+      <asp:TextBox ID="searchTextBox" Runat="server" Width="120px" CssClass="SearchBox" BorderStyle="Dotted" MaxLength="100" Height="16px" />
+      <asp:Button ID="goButton" Runat="server" CssClass="SearchBox" Text="Go!" Width="30px" Height="21px" OnClick="goButton_Click" /><br />
       <asp:CheckBox ID="allWordsCheckBox" CssClass="SearchBox" Runat="server" Text="Search for all words" />
     </td>
   </tr>

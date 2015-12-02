@@ -20,6 +20,7 @@
                 <tr>
                     <td valign="bottom">
                         <uc4:SearchBox ID="SearchBox2" runat="server"></uc4:SearchBox>
+                      
                         <uc5:UserInfo ID="UserInfo1" runat="server" />
                     </td>
                     <td>

@@ -13,10 +13,10 @@
     <link rel="Stylesheet" type="text/css" href="App_Themes/BalloonShopDefault/BalloonShop.css" />
     <title>BalloonShop</title>
 </head>
-<body style="font-family: Verdana; color: white; margin-left: auto; margin-right: auto; background-color: lightgrey">
+<body style="font-family: Verdana; color: white; margin-left: auto; margin-right: auto; background-color:white">
     <form id="Form1" runat="server">
-        <div style="background-color:lightgrey">
-            <table style="margin-right: auto; margin-left: auto">
+        <div style="background-color:grey">
+            <table style="margin-right: auto; margin-left: auto; background-color:grey">
                 <tr>
                     <td valign="bottom">
                         <uc4:SearchBox ID="SearchBox2" runat="server"></uc4:SearchBox>
@@ -32,7 +32,7 @@
                 </tr>
             </table>
         </div>
-        <div style="background-color:lightgrey">
+        <div style="background-color:white">
             <center>
                 <uc2:DepartmentsList ID="DepartmentsList2" runat="server" />
             </center>

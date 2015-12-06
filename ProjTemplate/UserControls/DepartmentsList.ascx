@@ -1,5 +1,5 @@
 <%@ Control Language="C#" AutoEventWireup="true" CodeFile="DepartmentsList.ascx.cs" Inherits="DepartmentsList" %>
-<asp:DataList ID="list" Width="92%" runat="server" CssClass="DepartmentListContent" RepeatColumns="6">
+<asp:DataList ID="list" Width="100%" runat="server" CssClass="DepartmentListContent" RepeatColumns="6">
   <ItemTemplate>
     &nbsp;&raquo;
     <asp:HyperLink ItemStyle-VerticalAlign="Top"

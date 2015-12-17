@@ -1,9 +1,9 @@
 <%@ Control Language="C#" AutoEventWireup="true" CodeFile="UserInfo.ascx.cs" Inherits="UserInfo" %>
 <table cellspacing="0" border="0" width="200px" class="UserInfoContent">
-  <tr>
+  <!--<tr>
     <td class="UserInfoHead">
       User Info</td>
-  </tr>
+  </tr>-->
   <asp:LoginView ID="LoginView1" runat="server">
     <AnonymousTemplate>
       <tr>

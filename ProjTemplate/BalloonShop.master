@@ -7,6 +7,7 @@
 <%@ Register Src="UserControls/CategoriesList.ascx" TagName="CategoriesList" TagPrefix="uc3" %>
 <%@ Register Src="UserControls/DepartmentsList.ascx" TagName="DepartmentsList" TagPrefix="uc2" %>
 <%@ Register Src="UserControls/Header.ascx" TagName="Header" TagPrefix="uc1" %>
+<%@ Register Src="UserControls/CheckBoxList.ascx" TagName="CheckBoxList" TagPrefix="uc7" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -15,41 +16,45 @@
 </head>
 <body style="font-family: Verdana; color: white; margin-left: auto; margin-right: auto; background-color:white">
     <form id="Form1" runat="server">
-        <div style="background-color:grey">
-            <table style="margin-right: auto; margin-left: auto; background-color:grey">
+        <div style="background-color:lightgrey" >
+            <table style="margin-right: auto; margin-left: auto; background-color:lightgrey">
                 <tr>
                     <td valign="bottom">
-                        <uc4:SearchBox ID="SearchBox2" runat="server"></uc4:SearchBox>
-                      
                         <uc5:UserInfo ID="UserInfo1" runat="server" />
+                        <br />
                     </td>
                     <td>
                         <uc1:Header ID="Header2" runat="server" />
                     </td>
                     <td valign="bottom">
-                        <uc6:CartSummary ID="CartSummary2" runat="server" />
+                        <uc4:SearchBox ID="SearchBox2" runat="server"></uc4:SearchBox>
                     </td>
                 </tr>
             </table>
         </div>
         <div style="background-color:white">
-            <center>
                 <uc2:DepartmentsList ID="DepartmentsList2" runat="server" />
-            </center>
             <br />
-            <table style="margin-right: auto; margin-left: auto" frame="border">
+            <table border="0">
                 <tr>
-                    <td style="width: 300" valign="top" align="left">
-                        <uc3:CategoriesList ID="CategoriesList2" runat="server" />
-                    </td>
                     <td valign="top">
+                        <uc3:CategoriesList ID="CategoriesList2" runat="server" />
+                        <br />
+                        <br />
+                        <uc7:CheckBoxList ID="CheckBoxList1" runat="server"></uc7:CheckBoxList>
+                    </td>
+                    <td valign="top" style="width:100%">
+                        <center>
                         <asp:ContentPlaceHolder ID="contentPlaceHolder" runat="server">
                         </asp:ContentPlaceHolder>
+                        </center>
+                    </td>
+                    <td valign="top">
+                        <uc6:CartSummary ID="CartSummary2" runat="server" />
                     </td>
                 </tr>
             </table>
         </div>
     </form>
-
 </body>
 </html>

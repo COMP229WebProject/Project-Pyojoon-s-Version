@@ -8,13 +8,13 @@
 <asp:DataList ID="list" Runat="server" RepeatColumns="2" EnableViewState="False" OnItemCommand="list_ItemCommand">
   <ItemTemplate>
     <table cellPadding="0" align="left">
-      <tr height="105">
+      <tr height="210">
         <td align="center" width="110">
           <a href='Product.aspx?ProductID=<%# Eval("ProductID")%>'>
-            <img width="100" src='ProductImages/<%# Eval("Thumbnail") %>' border="0"/>
+            <img width="170" src='ProductImages/<%# Eval("Thumbnail") %>' border="0"/>
           </a>
         </td>
-        <td vAlign="top" width="250">
+        <td width="200" style="padding-left:20px">
           <a class="ProductName" href='Product.aspx?ProductID=<%# Eval("ProductID")%>'>
             <%# Eval("Name") %>
           </a>

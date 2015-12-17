@@ -1,5 +1,5 @@
 <%@ Control Language="C#" AutoEventWireup="true" CodeFile="CategoriesList.ascx.cs" Inherits="CategoriesList" %>
-<asp:DataList ID="list" runat="server" CssClass="CategoryListContent">
+<asp:DataList ID="list" Width="200px" runat="server" CssClass="CategoryListContent">
   <ItemTemplate>
     &nbsp;&raquo;
     <asp:HyperLink 
